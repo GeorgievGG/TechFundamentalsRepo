@@ -1,0 +1,5 @@
+C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\1. DataTypesLab\1. DataTypesLab\3. ExactProduct\bin\Debug\_3.ExactProduct.exe.config
+C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\1. DataTypesLab\1. DataTypesLab\3. ExactProduct\bin\Debug\_3.ExactProduct.exe
+C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\1. DataTypesLab\1. DataTypesLab\3. ExactProduct\bin\Debug\_3.ExactProduct.pdb
+C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\1. DataTypesLab\1. DataTypesLab\3. ExactProduct\obj\Debug\_3.ExactProduct.exe
+C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\1. DataTypesLab\1. DataTypesLab\3. ExactProduct\obj\Debug\_3.ExactProduct.pdb

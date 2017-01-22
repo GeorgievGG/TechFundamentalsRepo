@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. TimeSinceBday", "1. DataTypesLab\1. TimeSinceBday.csproj", "{664B29A9-B808-4F4E-9BAA-27874743220E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. CirclePerimeter", "2. CirclePerimeter\2. CirclePerimeter.csproj", "{E477C905-02F7-4BBD-A12B-07E2833CB778}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. ExactProduct", "3. ExactProduct\3. ExactProduct.csproj", "{12B7047F-9C42-40B4-90E3-23BA8CAD0ED7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{664B29A9-B808-4F4E-9BAA-27874743220E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{664B29A9-B808-4F4E-9BAA-27874743220E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{664B29A9-B808-4F4E-9BAA-27874743220E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{664B29A9-B808-4F4E-9BAA-27874743220E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E477C905-02F7-4BBD-A12B-07E2833CB778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E477C905-02F7-4BBD-A12B-07E2833CB778}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E477C905-02F7-4BBD-A12B-07E2833CB778}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E477C905-02F7-4BBD-A12B-07E2833CB778}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12B7047F-9C42-40B4-90E3-23BA8CAD0ED7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12B7047F-9C42-40B4-90E3-23BA8CAD0ED7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12B7047F-9C42-40B4-90E3-23BA8CAD0ED7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12B7047F-9C42-40B4-90E3-23BA8CAD0ED7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
