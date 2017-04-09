@@ -7,3 +7,6 @@ C:\Users\Triple G\Desktop\Business\C# Projects\2. DataTypesNVars\6. TriplesOfLet
 C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\2. DataTypesNVars\6. TriplesOfLetters\bin\Debug\_6.TriplesOfLetters.exe.config
 C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\2. DataTypesNVars\6. TriplesOfLetters\obj\Debug\_6.TriplesOfLetters.exe
 C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\2. DataTypesNVars\6. TriplesOfLetters\obj\Debug\_6.TriplesOfLetters.pdb
+C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\TestRep\2. DataTypesNVars\6. TriplesOfLetters\bin\Debug\_6.TriplesOfLetters.exe.config
+C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\TestRep\2. DataTypesNVars\6. TriplesOfLetters\obj\Debug\_6.TriplesOfLetters.exe
+C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\TestRep\2. DataTypesNVars\6. TriplesOfLetters\obj\Debug\_6.TriplesOfLetters.pdb

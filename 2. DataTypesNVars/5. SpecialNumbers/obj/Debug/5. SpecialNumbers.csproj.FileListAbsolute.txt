@@ -7,3 +7,6 @@ C:\Users\Triple G\Desktop\Business\C# Projects\2. DataTypesNVars\5. SpecialNumbe
 C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\2. DataTypesNVars\5. SpecialNumbers\bin\Debug\_5.SpecialNumbers.exe.config
 C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\2. DataTypesNVars\5. SpecialNumbers\obj\Debug\_5.SpecialNumbers.exe
 C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\2. DataTypesNVars\5. SpecialNumbers\obj\Debug\_5.SpecialNumbers.pdb
+C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\TestRep\2. DataTypesNVars\5. SpecialNumbers\bin\Debug\_5.SpecialNumbers.exe.config
+C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\TestRep\2. DataTypesNVars\5. SpecialNumbers\obj\Debug\_5.SpecialNumbers.exe
+C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\TestRep\2. DataTypesNVars\5. SpecialNumbers\obj\Debug\_5.SpecialNumbers.pdb
