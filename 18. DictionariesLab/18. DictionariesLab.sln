@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. CountRealNums", "01. CountRealNums\01. CountRealNums.csproj", "{47250DDF-0D8C-432E-939A-6814C4ED9437}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. OddOccurances", "02. OddOccurances\02. OddOccurances.csproj", "{007ED060-F364-47E8-A8F4-7944B2170878}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{47250DDF-0D8C-432E-939A-6814C4ED9437}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47250DDF-0D8C-432E-939A-6814C4ED9437}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47250DDF-0D8C-432E-939A-6814C4ED9437}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47250DDF-0D8C-432E-939A-6814C4ED9437}.Release|Any CPU.Build.0 = Release|Any CPU
+		{007ED060-F364-47E8-A8F4-7944B2170878}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{007ED060-F364-47E8-A8F4-7944B2170878}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{007ED060-F364-47E8-A8F4-7944B2170878}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{007ED060-F364-47E8-A8F4-7944B2170878}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
