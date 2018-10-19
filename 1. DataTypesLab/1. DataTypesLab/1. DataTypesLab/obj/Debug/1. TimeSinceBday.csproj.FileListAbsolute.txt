@@ -1,6 +1,0 @@
-C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\1. DataTypesLab\1. DataTypesLab\1. DataTypesLab\bin\Debug\_1.DataTypesLab.exe.config
-C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\1. DataTypesLab\1. DataTypesLab\1. DataTypesLab\bin\Debug\_1.DataTypesLab.exe
-C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\1. DataTypesLab\1. DataTypesLab\1. DataTypesLab\bin\Debug\_1.DataTypesLab.pdb
-C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\1. DataTypesLab\1. DataTypesLab\1. DataTypesLab\obj\Debug\1. TimeSinceBday.csprojResolveAssemblyReference.cache
-C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\1. DataTypesLab\1. DataTypesLab\1. DataTypesLab\obj\Debug\_1.DataTypesLab.exe
-C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\1. DataTypesLab\1. DataTypesLab\1. DataTypesLab\obj\Debug\_1.DataTypesLab.pdb

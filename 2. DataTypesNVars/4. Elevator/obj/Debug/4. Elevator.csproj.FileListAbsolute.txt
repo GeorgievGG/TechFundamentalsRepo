@@ -1,8 +1,0 @@
-C:\Users\Triple G\Desktop\Business\C# Projects\2. DataTypesNVars\4. Elevator\bin\Debug\_4.Elevator.exe.config
-C:\Users\Triple G\Desktop\Business\C# Projects\2. DataTypesNVars\4. Elevator\bin\Debug\_4.Elevator.exe
-C:\Users\Triple G\Desktop\Business\C# Projects\2. DataTypesNVars\4. Elevator\bin\Debug\_4.Elevator.pdb
-C:\Users\Triple G\Desktop\Business\C# Projects\2. DataTypesNVars\4. Elevator\obj\Debug\_4.Elevator.exe
-C:\Users\Triple G\Desktop\Business\C# Projects\2. DataTypesNVars\4. Elevator\obj\Debug\_4.Elevator.pdb
-C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\2. DataTypesNVars\4. Elevator\bin\Debug\_4.Elevator.exe.config
-C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\2. DataTypesNVars\4. Elevator\obj\Debug\_4.Elevator.exe
-C:\Users\Triple G\Desktop\Business\C# Fundamentals Courses (Extended)\2. DataTypesNVars\4. Elevator\obj\Debug\_4.Elevator.pdb
