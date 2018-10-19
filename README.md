@@ -1,8 +1,13 @@
-# TestRep
-Startup repository for SoftUni testing
-<<<<<<< HEAD
-Another try at editing the README
-=======
-Don't read the next sentence
+This is the Repo of my second course in SoftUni.
 
-CHange to the master branch!
+We learned how to use the following elements of C#:
+
+DataTypes & Variables
+Methods
+Debugging
+Arrays & Collections
+Algorithms
+LINQ & Lambda expressions
+Classes
+Files management
+String processing & Regex
