@@ -3,23 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. PracticeIntNumbers", "1. PracticeIntNumbers\01. PracticeIntNumbers.csproj", "{E0DA5B8B-652B-4267-BCB7-304D8F17D3A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. PracticeIntNumbers", "01. PracticeIntNumbers\01. PracticeIntNumbers.csproj", "{E0DA5B8B-652B-4267-BCB7-304D8F17D3A5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. PracticeDecimalNumbers", "2. PracticeDecimalNumbers\02. PracticeDecimalNumbers.csproj", "{FF9C77A0-554F-4EED-B0C0-EAECF2D5CA3E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. PracticeDecimalNumbers", "02. PracticeDecimalNumbers\02. PracticeDecimalNumbers.csproj", "{FF9C77A0-554F-4EED-B0C0-EAECF2D5CA3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. ExchangeVarValues", "3. ExchangeVarValues\03. ExchangeVarValues.csproj", "{105904E5-5E10-42DF-8DF4-8C5AB762B806}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. ExchangeVarValues", "03. ExchangeVarValues\03. ExchangeVarValues.csproj", "{105904E5-5E10-42DF-8DF4-8C5AB762B806}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. FloatOrInt", "4. FloatOrInt\04. FloatOrInt.csproj", "{D3ADC97C-65FD-4557-9313-122AAD13617A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. FloatOrInt", "04. FloatOrInt\04. FloatOrInt.csproj", "{D3ADC97C-65FD-4557-9313-122AAD13617A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. StarsDistance", "5. StarsDistance\05. StarsDistance.csproj", "{05B0C33E-EF9E-463B-8628-B92C563DFF8E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. StarsDistance", "05. StarsDistance\05. StarsDistance.csproj", "{05B0C33E-EF9E-463B-8628-B92C563DFF8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. IncrementVariable", "6. IncrementVariable\06. IncrementVariable.csproj", "{66A1896C-4F71-4E5B-88FE-9A803FF2B520}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. IncrementVariable", "06. IncrementVariable\06. IncrementVariable.csproj", "{66A1896C-4F71-4E5B-88FE-9A803FF2B520}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. TerabytesToBits", "7. TerabytesToBits\07. TerabytesToBits.csproj", "{E36BA281-2495-41E2-A9E3-879CAE71C45D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. TerabytesToBits", "07. TerabytesToBits\07. TerabytesToBits.csproj", "{E36BA281-2495-41E2-A9E3-879CAE71C45D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. LightspeedTravel", "8. LightspeedTravel\08. LightspeedTravel.csproj", "{8E6E841F-3DC6-4444-A440-ADF94B275F48}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. LightspeedTravel", "08. LightspeedTravel\08. LightspeedTravel.csproj", "{8E6E841F-3DC6-4444-A440-ADF94B275F48}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. TriangleChecks", "9. TriangleChecks\09. TriangleChecks.csproj", "{6E725FF5-412D-4AFC-B6D8-4E3B3BC02DD4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09. TriangleChecks", "09. TriangleChecks\09. TriangleChecks.csproj", "{6E725FF5-412D-4AFC-B6D8-4E3B3BC02DD4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10. DataOverflow", "10. DataOverflow\10. DataOverflow.csproj", "{751174C6-EE39-4EB8-B4B0-6B34B4F809EC}"
 EndProject
