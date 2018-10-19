@@ -2,16 +2,17 @@
 
 namespace _3.ExactProduct
 {
-    class ExactProduct
+    public class ExactProduct
     {
-        static void Main()
+        public static void Main()
         {
-            int n = int.Parse(Console.ReadLine());
+            int incomingLines = int.Parse(Console.ReadLine());
             decimal num = 0;
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < incomingLines; i++)
             {
                 num = num * decimal.Parse(Console.ReadLine());
             }
+
             Console.WriteLine(num);
         }
     }
