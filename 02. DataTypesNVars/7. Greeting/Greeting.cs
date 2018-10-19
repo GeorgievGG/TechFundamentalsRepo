@@ -2,9 +2,9 @@
 
 namespace _7.Greeting
 {
-    class Greeting
+    public class Greeting
     {
-        static void Main()
+        public static void Main()
         {
             var firstName = Console.ReadLine();
             var lastName = Console.ReadLine();

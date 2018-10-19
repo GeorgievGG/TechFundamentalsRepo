@@ -2,9 +2,9 @@
 
 namespace _8.RefactorVolumeOfPyramid
 {
-    class RefactorVolumeOfPyramid
+    public class RefactorVolumeOfPyramid
     {
-        static void Main()
+        public static void Main()
         {
             Console.Write("Length: ");
             var length = double.Parse(Console.ReadLine());
@@ -14,7 +14,7 @@ namespace _8.RefactorVolumeOfPyramid
             var height = double.Parse(Console.ReadLine());
 
             var volume = (length * width * height) / 3;
-            Console.WriteLine("Pyramid Volume: {0:F2}", volume);
+            Console.WriteLine($"Pyramid Volume: {volume:F2}");
         }
     }
 }

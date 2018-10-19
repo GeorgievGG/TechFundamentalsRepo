@@ -2,17 +2,24 @@
 
 namespace _3.ExactSum
 {
-    class ExactSum
+    public class ExactSum
     {
-        static void Main()
+        public static void Main()
         {
-            int n = int.Parse(Console.ReadLine());
-            decimal num = 0;
-            for (int i = 0; i < n; i++)
-            {
-                 num += decimal.Parse(Console.ReadLine());
-            }
+            int incomingLines = int.Parse(Console.ReadLine());
+            decimal num = CalculateNumber(incomingLines);
             Console.WriteLine(num);
+        }
+
+        private static decimal CalculateNumber(int incomingLines)
+        {
+            decimal num = 0;
+            for (int i = 0; i < incomingLines; i++)
+            {
+                num += decimal.Parse(Console.ReadLine());
+            }
+
+            return num;
         }
     }
 }

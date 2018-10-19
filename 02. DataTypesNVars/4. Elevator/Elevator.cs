@@ -2,23 +2,23 @@
 
 namespace _4.Elevator
 {
-    class Elevator
+    public class Elevator
     {
-        static void Main()
+        public static void Main()
         {
-            int peopleCt = int.Parse(Console.ReadLine());
+            int peopleCount = int.Parse(Console.ReadLine());
             int capacity = int.Parse(Console.ReadLine());
-            if (capacity > peopleCt)
+            if (capacity > peopleCount)
             {
-                Console.WriteLine(1/*"All the persons fit inside in the elevator.Only one course is needed."*/);
+                Console.WriteLine(1); /*"All the persons fit inside in the elevator.Only one course is needed."*/
             }
-            else if (peopleCt % capacity == 0)
+            else if (peopleCount % capacity == 0)
             {
-                Console.WriteLine(peopleCt / capacity/*"{0} courses * {1} people", peopleCt / capacity, capacity*/);
+                Console.WriteLine(peopleCount / capacity); /*"{0} courses * {1} people", peopleCt / capacity, capacity*/
             }
             else
             {
-                Console.WriteLine(peopleCt/capacity + 1/*"{0} courses * {1} people + 1 course * {2} persons", peopleCt/capacity , capacity, peopleCt%capacity*/);
+                Console.WriteLine(peopleCount / capacity + 1); /*"{0} courses * {1} people + 1 course * {2} persons", peopleCt/capacity , capacity, peopleCt%capacity*/
             }
         }
     }

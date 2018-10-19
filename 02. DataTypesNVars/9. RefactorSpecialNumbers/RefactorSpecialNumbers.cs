@@ -2,9 +2,9 @@
 
 namespace _9.RefactorSpecialNumbers
 {
-    class RefactorSpecialNumbers
+    public class RefactorSpecialNumbers
     {
-        static void Main()
+        public static void Main()
         {
             var n = int.Parse(Console.ReadLine());
             for (int i = 1; i <= n; i++)

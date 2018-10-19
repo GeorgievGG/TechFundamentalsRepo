@@ -2,18 +2,21 @@
 
 namespace _6.TriplesOfLetters
 {
-    class TriplesOfLetters
+    public class TriplesOfLetters
     {
-        static void Main()
+        public static void Main()
         {
-            int n = int.Parse(Console.ReadLine());
-            for (int i = 97; i < n + 97; i++)
+            int lettersCount = int.Parse(Console.ReadLine());
+            for (int i = 97; i < lettersCount + 97; i++)
             {
-                for (int j = 97; j < n + 97; j++)
+                char firstChar = (char)i;
+                for (int j = 97; j < lettersCount + 97; j++)
                 {
-                    for (int k = 97; k < n + 97; k++)
+                    char secondChar = (char)j;
+                    for (int k = 97; k < lettersCount + 97; k++)
                     {
-                        Console.WriteLine("{0}{1}{2} ", (char)i, (char)j, (char)k);
+                        char thirdChar = (char)k;
+                        Console.WriteLine($"{firstChar}{secondChar}{thirdChar}");
                     }
                 }
             }
