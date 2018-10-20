@@ -1,13 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1. BlankReceipt", "1. BlankReceipt\1. BlankReceipt.csproj", "{07BCD295-AAEE-45E3-80FC-BDD16A1CB797}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2. SignOfNumber", "2. SignOfNumber\2. SignOfNumber.csproj", "{975E8500-A414-4AB5-B7A8-3B7DD4D642AA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. PrintingTriangle", "3. PrintingTriangel\3. PrintingTriangle.csproj", "{BA4703A1-559A-4910-B88D-58CB03AFAEA2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4. DrawFilledSquare", "4. DrawFilledSquare\4. DrawFilledSquare.csproj", "{4754B4E1-ABD9-440A-B1D5-C237E4330CCA}"
 EndProject
@@ -15,7 +13,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. CalculateTriangleArea", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6. MathPower", "6. MathPower\6. MathPower.csproj", "{F38B0E56-0370-40A9-A6DF-1DE7F4F1D20C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. GreaterNum", "7. GreaterNum\7. GreaterNum.csproj", "{E8A1DF8F-6BEA-486E-AE78-A951535D9D7C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3. PrintTriangle", "3. PrintTriangle\3. PrintTriangle.csproj", "{979DD751-2509-4206-9E4E-E30C233AC1DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. GreaterValue", "7. GreaterValue\7. GreaterValue.csproj", "{3A0D1CED-0D26-48E7-8B5B-282D00BE040B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +31,6 @@ Global
 		{975E8500-A414-4AB5-B7A8-3B7DD4D642AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{975E8500-A414-4AB5-B7A8-3B7DD4D642AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{975E8500-A414-4AB5-B7A8-3B7DD4D642AA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BA4703A1-559A-4910-B88D-58CB03AFAEA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BA4703A1-559A-4910-B88D-58CB03AFAEA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BA4703A1-559A-4910-B88D-58CB03AFAEA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BA4703A1-559A-4910-B88D-58CB03AFAEA2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{4754B4E1-ABD9-440A-B1D5-C237E4330CCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{4754B4E1-ABD9-440A-B1D5-C237E4330CCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4754B4E1-ABD9-440A-B1D5-C237E4330CCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -47,12 +43,19 @@ Global
 		{F38B0E56-0370-40A9-A6DF-1DE7F4F1D20C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F38B0E56-0370-40A9-A6DF-1DE7F4F1D20C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F38B0E56-0370-40A9-A6DF-1DE7F4F1D20C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E8A1DF8F-6BEA-486E-AE78-A951535D9D7C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E8A1DF8F-6BEA-486E-AE78-A951535D9D7C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E8A1DF8F-6BEA-486E-AE78-A951535D9D7C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E8A1DF8F-6BEA-486E-AE78-A951535D9D7C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{979DD751-2509-4206-9E4E-E30C233AC1DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{979DD751-2509-4206-9E4E-E30C233AC1DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{979DD751-2509-4206-9E4E-E30C233AC1DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{979DD751-2509-4206-9E4E-E30C233AC1DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A0D1CED-0D26-48E7-8B5B-282D00BE040B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A0D1CED-0D26-48E7-8B5B-282D00BE040B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A0D1CED-0D26-48E7-8B5B-282D00BE040B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A0D1CED-0D26-48E7-8B5B-282D00BE040B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D7A441C2-389E-4E05-A239-01E660186AD7}
 	EndGlobalSection
 EndGlobal

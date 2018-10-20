@@ -2,14 +2,15 @@
 
 namespace _2.SignOfNumber
 {
-    class SignOfNumber
+    public class SignOfNumber
     {
-        static void Main()
+        public static void Main()
         {
-            var num = int.Parse(Console.ReadLine());
+            int num = int.Parse(Console.ReadLine());
             AnalyzeAndPrintSign(num);
         }
-        static void AnalyzeAndPrintSign(int num)
+
+        private static void AnalyzeAndPrintSign(int num)
         {
             if (num > 0)
             {

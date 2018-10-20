@@ -2,26 +2,29 @@
 
 namespace _1.BlankReceipt
 {
-    class BlankReceipt
+    public class BlankReceipt
     {
-        static void Main()
+        public static void Main()
         {
             PrintHeader();
             PrintBody();
             PrintFooter();
         }
-        static void PrintHeader()
+
+        private static void PrintHeader()
         {
             Console.WriteLine(@"CASH RECEIPT
 ------------------------------");
         }
-        static void PrintBody()
+
+        private static void PrintBody()
         {
             Console.WriteLine(@"Charged to____________________
 Received by___________________"
         );
         }
-        static void PrintFooter()
+
+        private static void PrintFooter()
         {
             Console.WriteLine(@"------------------------------
 © SoftUni"); 
