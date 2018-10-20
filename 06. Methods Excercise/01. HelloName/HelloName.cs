@@ -9,7 +9,8 @@ namespace _01.HelloName
             string name = Console.ReadLine();
             PrintGreeting(name);
         }
-        static void PrintGreeting(string name)
+
+        private static void PrintGreeting(string name)
         {
             Console.WriteLine($"Hello, {name}!");
         }

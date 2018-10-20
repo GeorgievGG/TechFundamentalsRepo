@@ -11,7 +11,8 @@ namespace _02.MinMethod
             int c = int.Parse(Console.ReadLine());
             Console.WriteLine(GetMin(c, GetMin(a, b)));
         }
-        static int GetMin(int num1, int num2)
+
+        private static int GetMin(int num1, int num2)
         {
             return Math.Min(num1, num2);
         }

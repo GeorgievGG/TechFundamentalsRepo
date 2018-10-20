@@ -8,14 +8,15 @@ namespace _03.StringRepeater
         {
             string repeatedString = Console.ReadLine();
             int repeats = int.Parse(Console.ReadLine());
+            RepeatStr(repeatedString, repeats);
+        }
+
+        private static void RepeatStr(string str, int repeats)
+        {
             for (int i = 0; i < repeats; i++)
             {
-                RepeatStr(repeatedString, repeats);
+                Console.Write(str);
             }
-        }
-        static void RepeatStr(string str, int repeats)
-        {
-            Console.Write(str);
         }
     }
 }

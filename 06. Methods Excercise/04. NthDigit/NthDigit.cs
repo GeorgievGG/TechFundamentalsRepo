@@ -10,15 +10,27 @@ namespace _04.NthDigit
             int index = int.Parse(Console.ReadLine());
             Console.WriteLine(FindNthDigit(number, index));
         }
-        static int FindNthDigit(int number, int index)
+
+        private static int FindNthDigit(int number, int index)
         {
             int digit = 0;
             for (int i = 0; i < index; i++)
             {
-                digit = number % 10;
-                number /= 10;
+                digit = GetLastDigit(number);
+                number = RemoveLastDigit(number);
             }
+
             return digit;
+        }
+
+        private static int GetLastDigit(int number)
+        {
+            return number % 10;
+        }
+
+        private static int RemoveLastDigit(int number)
+        {
+            return number / 10;
         }
     }
 }
