@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06. Notification", "06. Notification\06. Notification.csproj", "{7EB01A69-4E82-492A-825D-B36C65D1F04A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. NumbersToWords", "7. NumbersToWords\07. NumbersToWords.csproj", "{D0E23E0A-9547-4370-A1C4-F831656D7940}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07. NumbersToWords", "07. NumbersToWords\07. NumbersToWords.csproj", "{D0E23E0A-9547-4370-A1C4-F831656D7940}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08. StringEncryption", "08. StringEncryption\08. StringEncryption.csproj", "{BA89CDDE-4087-4756-8BC0-78532C564BB4}"
 EndProject
