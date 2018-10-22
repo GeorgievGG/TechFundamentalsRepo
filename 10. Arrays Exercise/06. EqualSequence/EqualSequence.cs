@@ -3,12 +3,18 @@ using System.Linq;
 
 namespace _06.EqualSequence
 {
-    class EqualSequence
+    public class EqualSequence
     {
-        static void Main()
+        public static void Main()
         {
             int[] numbers = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
             int prevNumber = numbers[0];
+            string equalSequence = CheckIfSequenceIsEven(numbers, ref prevNumber);
+            Console.WriteLine(equalSequence);
+        }
+
+        private static string CheckIfSequenceIsEven(int[] numbers, ref int prevNumber)
+        {
             string equalSequence = "Yes";
             for (int i = 0; i < numbers.Length; i++)
             {
@@ -18,7 +24,8 @@ namespace _06.EqualSequence
                 }
                 prevNumber = numbers[i];
             }
-            Console.WriteLine(equalSequence);
+
+            return equalSequence;
         }
     }
 }
