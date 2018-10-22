@@ -6,10 +6,10 @@ namespace _01.Tricky_Strings
     {
         public static void Main()
         {
-            var delimiter = Console.ReadLine();
-            var numberOfStrings = int.Parse(Console.ReadLine());
-            var result = string.Empty;
-            var currentString = string.Empty;
+            string delimiter = Console.ReadLine();
+            int numberOfStrings = int.Parse(Console.ReadLine());
+            string currentString = string.Empty;
+            string result = string.Empty;
             for (int i = 0; i < numberOfStrings - 1; i++)
             {
                 currentString = Console.ReadLine();
@@ -17,6 +17,7 @@ namespace _01.Tricky_Strings
             }
             currentString = Console.ReadLine();
             result += currentString;
+
             Console.WriteLine(result);
         }
     }

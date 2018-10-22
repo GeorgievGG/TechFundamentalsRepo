@@ -6,7 +6,7 @@ namespace Tetris_Broken
     {
         public static void Main()
         {
-            int n = int.Parse(Console.ReadLine());
+            int size = int.Parse(Console.ReadLine());
             string currentDirection = Console.ReadLine();
 
             while (currentDirection != "exit")
@@ -14,71 +14,75 @@ namespace Tetris_Broken
                 switch (currentDirection)
                 {
                     case "up":
-                        Up(n);
+                        ExecuteUpCommand(size);
                         break;
                     case "right":
-                        Right(n);
+                        ExecuteRightCommand(size);
                         break;
                     case "down":
-                        Down(n);
+                        ExecuteDownCommand(size);
                         break;
                     case "left":
-                        Left(n);
+                        ExecuteLeftCommand(size);
                         break;
                 }
                 currentDirection = Console.ReadLine();
             }
         }
-        static void Left(int n)
+
+        private static void ExecuteLeftCommand(int size)
         {
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < size; i++)
             {
-                Console.WriteLine(new string('.', n) + new string('*', n));
+                Console.WriteLine(new string('.', size) + new string('*', size));
             }
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < size; i++)
             {
-                Console.WriteLine(new string('*', 2 * n));
+                Console.WriteLine(new string('*', 2 * size));
             }
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < size; i++)
             {
-                Console.WriteLine(new string('.', n) + new string('*', n));
+                Console.WriteLine(new string('.', size) + new string('*', size));
             }
         }
-        static void Right(int n)
+
+        private static void ExecuteRightCommand(int size)
         {
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < size; i++)
             {
-                Console.WriteLine(new string('*', n) + new string('.', n));
+                Console.WriteLine(new string('*', size) + new string('.', size));
             }
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < size; i++)
             {
-                Console.WriteLine(new string('*', 2 * n));
+                Console.WriteLine(new string('*', 2 * size));
             }
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < size; i++)
             {
-                Console.WriteLine(new string('*', n) + new string('.', n));
+                Console.WriteLine(new string('*', size) + new string('.', size));
             }
         }
-        static void Up(int n)
+
+        private static void ExecuteUpCommand(int size)
         {
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < size; i++)
             {
-                Console.WriteLine(new string('.', n) + new string('*', n) + new string('.', n));
+                Console.WriteLine(new string('.', size) + new string('*', size) + new string('.', size));
             }
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < size; i++)
             {
-                Console.WriteLine(new string('*', n * 3));
+                Console.WriteLine(new string('*', size * 3));
             }
         }
-        static void Down(int n)
+
+        private static void ExecuteDownCommand(int size)
         {
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < size; i++)
             {
-                Console.WriteLine(new string('*', n * 3));
+                Console.WriteLine(new string('*', size * 3));
             }
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < size; i++)
             {
-                Console.WriteLine(new string('.', n) + new string('*', n) + new string('.', n));
+                Console.WriteLine(new string('.', size) + new string('*', size) + new string('.', size));
             }
         }
     }
