@@ -8,6 +8,7 @@ namespace _00.DebuggingLections
         {
             string a = Console.ReadLine();
             Console.WriteLine(-5 % 2);
+
             /*call stack - gives info about the executed methods and lines of their execution and delets them after execution
             you can click on the stack twice to see the stack frame (variables)
             F10 next row

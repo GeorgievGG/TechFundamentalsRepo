@@ -4,7 +4,7 @@ namespace _01.MultiplyEvensByOdds
 {
     public class MultiplyEvensByOdds
     {
-        static void Main()
+        public static void Main()
         {
             string number = Console.ReadLine();
             int[] evens = new int[number.Length];
@@ -23,10 +23,12 @@ namespace _01.MultiplyEvensByOdds
                     }
                 }
             }
+
             int result = SumOfDigits(odds) * SumOfDigits(evens);
             Console.WriteLine(result);
         }
-        public static int SumOfDigits(int[] numbers)
+
+        private static int SumOfDigits(int[] numbers)
         {
             int sum = 0;
             foreach(var number in numbers)
