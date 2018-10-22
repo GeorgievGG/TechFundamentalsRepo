@@ -2,16 +2,28 @@
 
 namespace _06.OddNumbersInOddIndexes
 {
-    class OddNumbersInOddIndexes
+    public class OddNumbersInOddIndexes
     {
         public static void Main()
         {
-            string[] arrayString = Console.ReadLine().Split(' ');
-            int[] numbers = new int[arrayString.Length];
-            for (int i = 0; i < arrayString.Length; i++)
+            string[] arrayInput = Console.ReadLine().Split(' ');
+            int[] numbers = FillNumbers(arrayInput);
+            PrintArray(numbers);
+        }
+
+        private static int[] FillNumbers(string[] arrayInput)
+        {
+            int[] numbers = new int[arrayInput.Length];
+            for (int i = 0; i < arrayInput.Length; i++)
             {
-                numbers[i] = int.Parse(arrayString[i]);
+                numbers[i] = int.Parse(arrayInput[i]);
             }
+
+            return numbers;
+        }
+
+        private static void PrintArray(int[] numbers)
+        {
             for (int i = 0; i < numbers.Length; i++)
             {
                 if (numbers[i] % 2 != 0 && i % 2 != 0)

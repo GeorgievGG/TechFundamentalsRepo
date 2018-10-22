@@ -2,17 +2,30 @@
 
 namespace _05.CountOddNumbers
 {
-    class CountOddNumbers
+    public class CountOddNumbers
     {
         public static void Main()
         {
-            string[] arrayString = Console.ReadLine().Split(' ');
-            int[] numbers = new int[arrayString.Length];
-            int count = 0;
-            for (int i = 0; i < arrayString.Length; i++)
+            string[] arrayInput = Console.ReadLine().Split(' ');
+            int[] numbers = FillNumbers(arrayInput);
+            int count = GetCountOfOddNumbers(numbers);
+            Console.WriteLine(count);
+        }
+
+        private static int[] FillNumbers(string[] arrayInput)
+        {
+            int[] numbers = new int[arrayInput.Length];
+            for (int i = 0; i < arrayInput.Length; i++)
             {
-                numbers[i] = int.Parse(arrayString[i]);
+                numbers[i] = int.Parse(arrayInput[i]);
             }
+
+            return numbers;
+        }
+
+        private static int GetCountOfOddNumbers(int[] numbers)
+        {
+            int count = 0;
             foreach (var num in numbers)
             {
                 if (num % 2 != 0)
@@ -20,7 +33,8 @@ namespace _05.CountOddNumbers
                     count++;
                 }
             }
-            Console.WriteLine(count);
+
+            return count;
         }
     }
 }
