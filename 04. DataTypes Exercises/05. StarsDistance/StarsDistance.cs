@@ -2,9 +2,9 @@
 
 namespace _05.StarsDistance
 {
-    class StarsDistance
+    public class StarsDistance
     {
-        static void Main()
+        public static void Main()
         {
             decimal num1 = 4.22M * 9450000000000;
             decimal num2 = 26000M * 9450000000000;

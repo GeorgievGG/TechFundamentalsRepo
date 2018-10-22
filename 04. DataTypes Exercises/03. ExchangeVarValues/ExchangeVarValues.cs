@@ -2,9 +2,9 @@
 
 namespace _03.ExchangeVarValues
 {
-    class ExchangeVarValues
+    public class ExchangeVarValues
     {
-        static void Main()
+        public static void Main()
         {
             var a = int.Parse(Console.ReadLine());
             var b = int.Parse(Console.ReadLine());

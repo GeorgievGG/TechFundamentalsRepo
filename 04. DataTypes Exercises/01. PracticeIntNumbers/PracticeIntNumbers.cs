@@ -2,9 +2,9 @@
 
 namespace _01.PracticeIntNumbers
 {
-    class PracticeIntNumbers
+    public class PracticeIntNumbers
     {
-        static void Main()
+        public static void Main()
         {
             sbyte num1 = -100;
             byte num2 = 128;

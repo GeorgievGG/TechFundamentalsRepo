@@ -2,9 +2,9 @@
 
 namespace _13.WordsToDigits
 {
-    class WordsToDigits
+    public class WordsToDigits
     {
-        static void Main()
+        public static void Main()
         {
             string digitString = Console.ReadLine().ToLower();
             switch (digitString)

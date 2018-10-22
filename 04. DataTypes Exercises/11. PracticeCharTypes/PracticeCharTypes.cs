@@ -2,9 +2,9 @@
 
 namespace _11.PracticeCharTypes
 {
-    class PracticeCharTypes
+    public class PracticeCharTypes
     {
-        static void Main()
+        public static void Main()
         {
             string str1 = "Software University";
             char str2 = 'B';

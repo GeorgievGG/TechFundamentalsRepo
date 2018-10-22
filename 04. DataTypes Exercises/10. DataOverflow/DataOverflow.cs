@@ -2,9 +2,9 @@
 
 namespace _10.DataOverflow
 {
-    class DataOverflow
+    public class DataOverflow
     {
-        static void Main()
+        public static void Main()
         {
             var a = ulong.Parse(Console.ReadLine());
             var b = ulong.Parse(Console.ReadLine());

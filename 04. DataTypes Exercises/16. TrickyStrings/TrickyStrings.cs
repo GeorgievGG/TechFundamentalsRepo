@@ -8,17 +8,21 @@ namespace _16.TrickyStrings
         {
             string delimiter = Console.ReadLine();
             int numOfChars = int.Parse(Console.ReadLine());
-            string outputString = "";
             string newString = "";
+            string outputString = "";
             for (int i = 0; i < numOfChars - 1; i++)
             {
                 newString = Console.ReadLine();
-                outputString += newString;
-                outputString += delimiter;
+                outputString += FormatString(newString, delimiter);
             }
             newString = Console.ReadLine();
             outputString += newString;
             Console.WriteLine(outputString);
+        }
+
+        private static string FormatString(string newString, string delimiter)
+        {
+            return $"{newString}{delimiter}";
         }
     }
 }
