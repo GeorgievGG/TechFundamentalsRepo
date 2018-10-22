@@ -10,15 +10,23 @@ namespace _05.IntegerToBase
             int toBase = int.Parse(Console.ReadLine());
             Console.WriteLine(GetIntegerToBase(number, toBase));
         }
-        static string GetIntegerToBase(int number, int toBase)
+
+        private static string GetIntegerToBase(int number, int toBase)
         {
             string result = "";
             while (number != 0)
             {
-                result = (number % toBase).ToString() + result;
-                number /= toBase;
+                int baseEquivalent = number % toBase;
+                result = baseEquivalent.ToString() + result;
+                number = ReduceNumber(number, toBase);
             }
+
             return result;
+        }
+
+        private static int ReduceNumber(int number, int toBase)
+        {
+            return number / toBase;
         }
     }
 }

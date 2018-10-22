@@ -2,9 +2,9 @@
 
 namespace _06.Notification
 {
-    class Notification
+    public class Notification
     {
-        static void Main()
+        public static void Main()
         {
             int operations = int.Parse(Console.ReadLine());
             string result = "";
@@ -30,13 +30,15 @@ namespace _06.Notification
                 Console.WriteLine(endString);
             }
         }
-        static string ShowSuccess(string operation, string message)
+
+        private static string ShowSuccess(string operation, string message)
         {
             return $@"Successfully executed {operation}.
 ==============================
 Message: {message}.";
         }
-        static string ShowError(string operation, int code)
+
+        private static string ShowError(string operation, int code)
         {
             string reason = "";
             if (code >= 0)
@@ -47,6 +49,7 @@ Message: {message}.";
             {
                 reason = "Internal System Failure";
             }
+
             return $@"Error: Failed to execute {operation}.
 ==============================
 Error Code: {code}.

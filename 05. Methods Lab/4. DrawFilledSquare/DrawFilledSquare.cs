@@ -2,16 +2,17 @@
 
 namespace _4.DrawFilledSquare
 {
-    class DrawFilledSquare
+    public class DrawFilledSquare
     {
-        static void Main()
+        public static void Main()
         {
-            var num = int.Parse(Console.ReadLine());
-            PrintRoof(num);
-            PrintBody(num);
-            PrintBottom(num);
+            int size = int.Parse(Console.ReadLine());
+            PrintRoof(size);
+            PrintBody(size);
+            PrintBottom(size);
         }
-        static void PrintRoof(int num)
+
+        private static void PrintRoof(int num)
         {
             for (int i = 0; i < num * 2; i++)
             {
@@ -19,7 +20,8 @@ namespace _4.DrawFilledSquare
             }
             Console.WriteLine();
         }
-        static void PrintBody(int num)
+
+        private static void PrintBody(int num)
         {
             for (int i = 0; i < num - 2; i++)
             {
@@ -32,7 +34,8 @@ namespace _4.DrawFilledSquare
                 Console.WriteLine();
             }
         }
-        static void PrintBottom(int num)
+
+        private static void PrintBottom(int num)
         {
             for (int i = 0; i < num * 2; i++)
             {
