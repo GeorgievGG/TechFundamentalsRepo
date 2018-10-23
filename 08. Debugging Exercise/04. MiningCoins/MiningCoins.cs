@@ -7,10 +7,8 @@ namespace _04.MiningCoins
         public static void Main()
         {
             int codes = int.Parse(Console.ReadLine());
-
-            string decrypted = "";
+            string decryptedString = string.Empty;
             float totalValue = 0;
-
             for (int i = 1; i <= codes; i++)
             {
                 int number = int.Parse(Console.ReadLine());
@@ -22,19 +20,29 @@ namespace _04.MiningCoins
 
                 if (i % 2 == 0)
                 {
-                    ASCIIcode = ((digit1 * 10) + digit3) + digit2;
+                    ASCIIcode = DecryptEvenNumber(digit1, digit2, digit3);
                 }
                 else
                 {
-                    ASCIIcode = ((digit1 * 10) + digit3) - digit2;
+                    ASCIIcode = DecryptOddNumber(digit1, digit2, digit3);
                 }
                 if ((ASCIIcode >= 65 && ASCIIcode <= 90) || (ASCIIcode >= 97 && ASCIIcode <= 122))
                 {
-                    decrypted += (char)ASCIIcode;
+                    decryptedString += (char)ASCIIcode;
                 }
             }
-            Console.WriteLine("Message: {0}", decrypted);
+            Console.WriteLine("Message: {0}", decryptedString);
             Console.WriteLine("Value: {0:F7}", totalValue);
+        }
+
+        private static int DecryptEvenNumber(int digit1, int digit2, int digit3)
+        {
+            return ((digit1 * 10) + digit3) + digit2;
+        }
+
+        private static int DecryptOddNumber(int digit1, int digit2, int digit3)
+        {
+            return ((digit1 * 10) + digit3) - digit2;
         }
     }
 }

@@ -3,12 +3,18 @@ using System.Linq;
 
 namespace _03.CountGivenArrayElement
 {
-    class CountGivenArrayElement
+    public class CountGivenArrayElement
     {
-        static void Main()
+        public static void Main()
         {
             int[] numbers = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
             int givenNum = int.Parse(Console.ReadLine());
+            int countOccurance = CountNumberOccurences(numbers, givenNum);
+            Console.WriteLine(countOccurance);
+        }
+
+        private static int CountNumberOccurences(int[] numbers, int givenNum)
+        {
             int countOccurance = 0;
             for (int i = 0; i < numbers.Length; i++)
             {
@@ -17,7 +23,8 @@ namespace _03.CountGivenArrayElement
                     countOccurance++;
                 }
             }
-            Console.WriteLine(countOccurance);
+
+            return countOccurance;
         }
     }
 }

@@ -3,12 +3,18 @@ using System.Linq;
 
 namespace _05.IncreasingSequence
 {
-    class IncreasingSequence
+    public class IncreasingSequence
     {
-        static void Main()
+        public static void Main()
         {
             int[] numbers = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
             int prevNumber = int.MinValue;
+            string increasing = CheckIfSequenceIsIncreasing(numbers, ref prevNumber);
+            Console.WriteLine(increasing);
+        }
+
+        private static string CheckIfSequenceIsIncreasing(int[] numbers, ref int prevNumber)
+        {
             string increasing = "Yes";
             for (int i = 0; i < numbers.Length; i++)
             {
@@ -16,9 +22,11 @@ namespace _05.IncreasingSequence
                 {
                     increasing = "No";
                 }
+
                 prevNumber = numbers[i];
             }
-            Console.WriteLine(increasing);
+
+            return increasing;
         }
     }
 }

@@ -7,9 +7,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01. SumOfArrayElements", "0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02. MultiplyArray", "02. MultiplyArray\02. MultiplyArray.csproj", "{0C64C480-CB40-4ADD-819D-05F4E39BA97A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. SmallestArrayElement", "3. SmallestArrayElement\03. SmallestArrayElement.csproj", "{51B38F8F-8D50-45BA-A11B-7E6E576C1256}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03. SmallestArrayElement", "03. SmallestArrayElement\03. SmallestArrayElement.csproj", "{51B38F8F-8D50-45BA-A11B-7E6E576C1256}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. RotateArray", "4. RotateArray\04. RotateArray.csproj", "{25599A23-1D0A-49FD-BBCA-A8D42E06E1CD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04. RotateArray", "04. RotateArray\04. RotateArray.csproj", "{25599A23-1D0A-49FD-BBCA-A8D42E06E1CD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "05. CountOddNumbers", "05. CountOddNumbers\05. CountOddNumbers.csproj", "{1DA36231-0A89-45B5-BEBC-4E6C70E59363}"
 EndProject

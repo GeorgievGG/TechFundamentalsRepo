@@ -2,9 +2,9 @@
 
 namespace _06.IncrementVariable
 {
-    class IncrementVariable
+    public class IncrementVariable
     {
-        static void Main()
+        public static void Main()
         {
             var incrementations = int.Parse(Console.ReadLine());
             byte incrementedNumber = 0;
@@ -17,6 +17,7 @@ namespace _06.IncrementVariable
                     countOverflow++;
                 };
             }
+
             Console.WriteLine(incrementedNumber);
             if (countOverflow != 0)
             {

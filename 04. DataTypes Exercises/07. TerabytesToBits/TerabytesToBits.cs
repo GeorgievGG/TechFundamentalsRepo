@@ -2,9 +2,9 @@
 
 namespace _07.TerabytesToBits
 {
-    class TerabytesToBits
+    public class TerabytesToBits
     {
-        static void Main()
+        public static void Main()
         {
             var terabytes = double.Parse(Console.ReadLine());
             decimal bytes = (decimal)terabytes * 1024 * 1024 * 1024 * 1024 * 8;

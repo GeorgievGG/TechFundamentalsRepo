@@ -2,9 +2,9 @@
 
 namespace _08.LightspeedTravel
 {
-    class LightspeedTravel
+    public class LightspeedTravel
     {
-        static void Main()
+        public static void Main()
         {
             decimal lightYearKm = 9450000000000 * decimal.Parse(Console.ReadLine());
             decimal speedOfLight = 300000;

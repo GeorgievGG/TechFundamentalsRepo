@@ -2,9 +2,9 @@
 
 namespace _02.PracticeDecimalNumbers
 {
-    class PracticeDecimalNumbers
+    public class PracticeDecimalNumbers
     {
-        static void Main()
+        public static void Main()
         {
             decimal num1 = 3.141592653589793238M;
             double num2 = 1.60217657;

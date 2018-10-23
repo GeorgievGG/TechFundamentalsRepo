@@ -3,12 +3,18 @@ using System.Linq;
 
 namespace _04.CountLargerNumbers
 {
-    class CountLargerNumbers
+    public class CountLargerNumbers
     {
-        static void Main()
+        public static void Main()
         {
             double[] numbers = Console.ReadLine().Split(' ').Select(double.Parse).ToArray();
             double givenNum = double.Parse(Console.ReadLine());
+            int countOccurance = CountNumberOccurence(numbers, givenNum);
+            Console.WriteLine(countOccurance);
+        }
+
+        private static int CountNumberOccurence(double[] numbers, double givenNum)
+        {
             int countOccurance = 0;
             for (int i = 0; i < numbers.Length; i++)
             {
@@ -17,7 +23,8 @@ namespace _04.CountLargerNumbers
                     countOccurance++;
                 }
             }
-            Console.WriteLine(countOccurance);
+
+            return countOccurance;
         }
     }
 }

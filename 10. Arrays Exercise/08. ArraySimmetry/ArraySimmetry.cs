@@ -2,11 +2,17 @@
 
 namespace _08.ArraySimmetry
 {
-    class ArraySimmetry
+    public class ArraySimmetry
     {
-        static void Main()
+        public static void Main()
         {
             string[] strings = Console.ReadLine().Split(' ');
+            string isSymmetric = CheckForSymmetry(strings);
+            Console.WriteLine(isSymmetric);
+        }
+
+        private static string CheckForSymmetry(string[] strings)
+        {
             string isSymmetric = "Yes";
             for (int i = 0; i < strings.Length; i++)
             {
@@ -15,7 +21,8 @@ namespace _08.ArraySimmetry
                     isSymmetric = "No";
                 }
             }
-            Console.WriteLine(isSymmetric);
+
+            return isSymmetric;
         }
     }
 }

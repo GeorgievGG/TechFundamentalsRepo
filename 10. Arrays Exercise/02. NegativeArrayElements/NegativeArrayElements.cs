@@ -2,14 +2,14 @@
 
 namespace _02.NegativeArrayElements
 {
-    class NegativeArrayElements
+    public class NegativeArrayElements
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
-            int n = int.Parse(Console.ReadLine());
-            int[] numbers = new int[n];
+            int arrayLength = int.Parse(Console.ReadLine());
+            int[] numbers = new int[arrayLength];
             int countNegative = 0;
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < arrayLength; i++)
             {
                 numbers[i] = int.Parse(Console.ReadLine());
                 if (numbers[i] < 0)

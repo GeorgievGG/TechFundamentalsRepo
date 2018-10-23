@@ -2,9 +2,9 @@
 
 namespace _04.FloatOrInt
 {
-    class FloatOrInt
+    public class FloatOrInt
     {
-        static void Main()
+        public static void Main()
         {
             var number = double.Parse(Console.ReadLine());
             if (number % 1 == 0)
