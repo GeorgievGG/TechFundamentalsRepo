@@ -3,79 +3,70 @@ using System.Collections.Generic;
 
 namespace _04.SplitByWordCasing
 {
-    class SplitByWordCasing
+    public class SplitByWordCasing
     {
+        private const string UPPER_CASE_TYPE = "Upper-case";
+        private const string MIXED_CASE_TYPE = "Mixed-case";
+        private const string LOWER_CASE_TYPE = "Lower-case";
+
         public static void Main()
         {
             string[] input = Console.ReadLine().Split(new char[] { ' ', ',', ';', ':', '.', '!', '(', ')', '\"', '\'', '\\', '/', '[', ']' }, StringSplitOptions.RemoveEmptyEntries);
             List<string> lowerCase = new List<string>();
             List<string> upperCase = new List<string>();
             List<string> mixedCase = new List<string>();
-            bool hasUpper = false;
-            bool hasLower = false;
-            bool hasSymbol = false;
             for (int i = 0; i < input.Length; i++)
             {
-                for (int j = 0; j < input[i].Length; j++)
-                {
-                    if (input[i][j] >= 97 && input[i][j] <= 122)
-                    {
-                        hasLower = true;
-                    }
-                    else if (input[i][j] >= 65 && input[i][j] <= 90)
-                    {
-                        hasUpper = true;
-                    }
-                    else
-                    {
-                        hasSymbol = true;
-                    }
-                }
-                if (hasLower == true && hasUpper == true && hasSymbol != true)
-                {
-                    mixedCase.Add(input[i]);
-                }
-                else if (hasLower == true && hasSymbol != true)
-                {
-                    lowerCase.Add(input[i]);
-                }
-                else if (hasUpper == true && hasSymbol != true)
-                {
-                    upperCase.Add(input[i]);
-                }
-                else
-                {
-                    mixedCase.Add(input[i]);
-                }
-                hasUpper = false;
-                hasLower = false;
-                hasSymbol = false;
+                Word word = AnalyzeString(input, i);
+                PlaceWordInProperList(lowerCase, upperCase, mixedCase, word);
             }
-            Console.Write("Lower-case: ");
-            for (int i = 0; i < lowerCase.Count; i++)
+
+            PrintChars(lowerCase, LOWER_CASE_TYPE);
+            PrintChars(mixedCase, MIXED_CASE_TYPE);
+            PrintChars(upperCase, UPPER_CASE_TYPE);
+        }
+
+        private static Word AnalyzeString(string[] input, int i)
+        {
+            var word = new Word(input[i]);
+            for (int j = 0; j < input[i].Length; j++)
             {
-                if (i != lowerCase.Count - 1)
+                if (input[i][j] >= 97 && input[i][j] <= 122)
                 {
-                    Console.Write(lowerCase[i] + ", ");
+                    word.HasLower = true;
+                }
+                else if (input[i][j] >= 65 && input[i][j] <= 90)
+                {
+                    word.HasUpper = true;
                 }
                 else
                 {
-                    Console.WriteLine(lowerCase[i]);
+                    word.HasSymbol = true;
                 }
             }
-            Console.Write("Mixed-case: ");
-            for (int i = 0; i < mixedCase.Count; i++)
+
+            return word;
+        }
+
+        private static void PlaceWordInProperList(List<string> lowerCase, List<string> upperCase, List<string> mixedCase, Word word)
+        {
+            if (word.HasLower == true && word.HasSymbol != true)
             {
-                if (i != mixedCase.Count - 1)
-                {
-                    Console.Write(mixedCase[i] + ", ");
-                }
-                else
-                {
-                    Console.WriteLine(mixedCase[i]);
-                }
+                lowerCase.Add(word.Content);
             }
-            Console.Write("Upper-case: ");
+            else if (word.HasUpper == true && word.HasSymbol != true)
+            {
+                upperCase.Add(word.Content);
+            }
+            else
+            {
+                mixedCase.Add(word.Content);
+            }
+        }
+
+        private static void PrintChars(List<string> upperCase, string charType)
+        {
+            Console.Write($"{charType}: ");
             for (int i = 0; i < upperCase.Count; i++)
             {
                 if (i != upperCase.Count - 1)

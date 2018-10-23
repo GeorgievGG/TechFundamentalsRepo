@@ -3,31 +3,36 @@ using System.Collections.Generic;
 
 namespace _02.AppendLists
 {
-    class AppendLists
+    public class AppendLists
     {
         public static void Main()
         {
-            string[] input = Console.ReadLine().Split('|');
-            List<int> currentList = new List<int>();
-            List<int> numbers = new List<int>();
-            for (int i = 0; i < input.Length; i++)
+            string[] arrays = Console.ReadLine().Split('|');
+            List<int> finalNumbers = new List<int>();
+            for (int i = 0; i < arrays.Length; i++)
             {
-                string[] currNum = input[i].Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                for (int j = 0; j < currNum.Length; j++)
+                string[] currentArray = arrays[i].Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                List<int> currentList = new List<int>();
+                for (int j = 0; j < currentArray.Length; j++)
                 {
-                    currentList.Add(int.Parse(currNum[j].ToString()));
+                    currentList.Add(int.Parse(currentArray[j].ToString()));
                 }
-                currentList.Reverse();
-                numbers.Reverse();
-                numbers.AddRange(currentList);
-                numbers.Reverse();
-                currentList.Clear();
-            }
-            foreach (var number in numbers)
-            {
 
+                AppendToFinalList(finalNumbers, currentList);
+            }
+
+            foreach (var number in finalNumbers)
+            {
                 Console.Write(number + " ");
             }
+        }
+
+        private static void AppendToFinalList(List<int> numbers, List<int> currentList)
+        {
+            currentList.Reverse();
+            numbers.Reverse();
+            numbers.AddRange(currentList);
+            numbers.Reverse();
         }
     }
 }
