@@ -2,9 +2,9 @@
 
 namespace _07.ResizeableArray
 {
-    class ResizeableArray
+    public class ResizeableArray
     {
-        static void Main()
+        public static void Main()
         {
             string[] request = new string[2];
             int?[] numbers = new int?[4];
@@ -20,22 +20,8 @@ namespace _07.ResizeableArray
                 {
                     break;
                 }
-                if (request[0] == "push")
-                {
-                    numbers = Push(int.Parse(request[1].ToString()), numbers);
-                }
-                else if (request[0] == "pop")
-                {
-                    numbers = Pop(numbers);
-                }
-                else if (request[0] == "removeAt")
-                {
-                    numbers = RemoveAt(int.Parse(request[1].ToString()), numbers);
-                }
-                else if (request[0] == "clear")
-                {
-                    numbers = Clear();
-                }
+
+                numbers = ExecuteRequest(request, numbers);
             }
             if (numbers.Length == 0)
             {
@@ -51,6 +37,28 @@ namespace _07.ResizeableArray
                     }
                 }
             }
+        }
+
+        private static int?[] ExecuteRequest(string[] request, int?[] numbers)
+        {
+            if (request[0] == "push")
+            {
+                numbers = Push(int.Parse(request[1].ToString()), numbers);
+            }
+            else if (request[0] == "pop")
+            {
+                numbers = Pop(numbers);
+            }
+            else if (request[0] == "removeAt")
+            {
+                numbers = RemoveAt(int.Parse(request[1].ToString()), numbers);
+            }
+            else if (request[0] == "clear")
+            {
+                numbers = Clear();
+            }
+
+            return numbers;
         }
 
         private static int?[] Push(int input, int?[] numbers)

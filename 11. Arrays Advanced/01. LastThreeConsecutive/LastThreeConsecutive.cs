@@ -2,32 +2,48 @@
 
 namespace _01.LastThreeConsecutive
 {
-    class LastThreeConsecutive
+    public class LastThreeConsecutive
     {
-        static void Main()
+        public static void Main()
         {
             string[] strings = Console.ReadLine().Split(' ');
             int repeatedStringPosition = 0;
-            int count = 0;
             for (int i = 0; i < strings.Length; i++)
             {
+                int repeatedWords = 0;
                 for (int j = i; j < strings.Length; j++)
                 {
-                    if (strings[i] == strings[j])
-                    {
-                        count++;
-                    }
-                    else
-                    {
-                        count = 0;
-                    }
-                    if (count == 3)
+                    string comparedWord = strings[i];
+                    string currentWord = strings[j];
+                    repeatedWords = IncreaseIfRepeated(repeatedWords, comparedWord, currentWord);
+
+                    if (repeatedWords == 3)
                     {
                         repeatedStringPosition = i;
+                        continue;
                     }
                 }
-                count = 0;
             }
+
+            PrintChosenStrings(strings, repeatedStringPosition);
+        }
+
+        private static int IncreaseIfRepeated(int repeatedWords, string comparedWord, string currentWord)
+        {
+            if (comparedWord == currentWord)
+            {
+                repeatedWords++;
+            }
+            else
+            {
+                repeatedWords = 0;
+            }
+
+            return repeatedWords;
+        }
+
+        private static void PrintChosenStrings(string[] strings, int repeatedStringPosition)
+        {
             for (int k = repeatedStringPosition; k < repeatedStringPosition + 3; k++)
             {
                 Console.Write($"{strings[k]} ");

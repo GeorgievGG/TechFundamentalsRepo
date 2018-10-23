@@ -3,9 +3,9 @@ using System.Linq;
 
 namespace _06.PowerPlants
 {
-    class PowerPlants
+    public class PowerPlants
     {
-        static void Main()
+        public static void Main()
         {
             int[] plantsPower = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
             int nthDay = plantsPower.Length;
@@ -13,28 +13,23 @@ namespace _06.PowerPlants
             int seasons = 0;
             while (true)
             {
-                for (int i = 0; i < plantsPower.Length; i++)
-                {
-                    if (i == days % nthDay)
-                    {
-                        plantsPower[i]++;
-                    }
-                    plantsPower[i]--;
-                }
+                ManagePlantsPower(plantsPower, nthDay, days);
+
                 days++;
-                if (plantsPower.Max() == 0)
+
+                bool allPlantsDied = plantsPower.Max() == 0;
+                if (allPlantsDied)
                 {
                     break;
                 }
-                if (days % nthDay == 0)
+
+                bool seasonHasEnded = days % nthDay == 0;
+                if (seasonHasEnded)
                 {
-                    seasons++;
-                    for (int i = 0; i < plantsPower.Length; i++)
-                    {
-                        plantsPower[i]++;
-                    }
+                    seasons = IncreaseSeasons(plantsPower, seasons);
                 }
             }
+
             if (seasons == 1)
             {
                 Console.WriteLine($"survived {days} days ({seasons} season)");
@@ -42,6 +37,35 @@ namespace _06.PowerPlants
             else
             {
                 Console.WriteLine($"survived {days} days ({seasons} seasons)");
+            }
+        }
+
+        private static void ManagePlantsPower(int[] plantsPower, int nthDay, int days)
+        {
+            for (int i = 0; i < plantsPower.Length; i++)
+            {
+                if (i == days % nthDay)
+                {
+                    plantsPower[i]++;
+                }
+
+                plantsPower[i]--;
+            }
+        }
+
+        private static int IncreaseSeasons(int[] plantsPower, int seasons)
+        {
+            seasons++;
+            Bloom(plantsPower);
+
+            return seasons;
+        }
+
+        private static void Bloom(int[] plantsPower)
+        {
+            for (int i = 0; i < plantsPower.Length; i++)
+            {
+                plantsPower[i]++;
             }
         }
     }

@@ -3,25 +3,45 @@ using System.Linq;
 
 namespace _05.CharRotation
 {
-    class CharRotation
+    public class CharRotation
     {
-        static void Main()
+        public static void Main()
         {
             string strInput = Console.ReadLine();
             int[] codes = Console.ReadLine().Split(' ').Select(int.Parse).ToArray();
             string result = "";
+            result = ApplyCodes(strInput, codes, result);
+
+            Console.WriteLine(result);
+        }
+
+        private static string ApplyCodes(string strInput, int[] codes, string result)
+        {
             for (int i = 0; i < strInput.Length; i++)
             {
-                if (codes[i] % 2 == 0)
-                {
-                    result += (char)(strInput[i] - codes[i]);
-                }
-                else
-                {
-                    result += (char)(strInput[i] + codes[i]);
-                }
+                int newChar = strInput[i];
+                int applicableCode = codes[i];
+                newChar = ApplyCode(newChar, applicableCode);
+
+                result += (char)newChar;
             }
-            Console.WriteLine(result);
+
+            return result;
+        }
+
+        private static int ApplyCode(int newChar, int applicableCode)
+        {
+            bool positionIsEven = applicableCode % 2 == 0;
+            if (positionIsEven)
+            {
+                newChar -= applicableCode;
+            }
+            else
+            {
+                newChar += applicableCode;
+            }
+
+            return newChar;
         }
     }
 }
